@@ -16,10 +16,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.connect("mongodb://FoodAdmin:!rCmKkn9@localhost:27017/dbFood?authSource=admin", {
-  useCreateIndex: true,
   useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useFindAndModify: false
 })
   .then(() => {
     console.log("Connected to DB");
