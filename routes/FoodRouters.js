@@ -9,6 +9,6 @@ router.post('/register', register)
 
 router.put('/update/:id', update)
 
-router.delete('/delete', deleteFood)
+router.delete('/delete/:id', deleteFood)
 
 module.exports = router
