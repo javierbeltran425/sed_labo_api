@@ -45,10 +45,10 @@ var FoodController = {
         }
     },
 
-    delete: async(req, res) => {
+    deleteFood: async(req, res) => {
         try {
             await Food.findByIdAndRemove(req.params.id)
-            
+
             return res.status(200).json({ error: false, message: "Removed" })
         } catch (error) {
             return res.status(400).json(err.details != null ? err.details[0].message : err)
