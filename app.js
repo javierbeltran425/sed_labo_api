@@ -26,7 +26,6 @@ mongoose.connect("mongodb://FoodAdmin:!rCmKkn9@localhost:27017/dbFood?authSource
   })
   .catch((err) => {
     console.log(err)
-    debug(err);
     process.exit(1);
   })
 
