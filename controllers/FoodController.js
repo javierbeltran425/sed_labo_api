@@ -38,7 +38,7 @@ var FoodController = {
             const food = await Food.find()
 
             return res.status(200).json({
-                data:food
+                food
             })
         } catch (error) {
             return res.status(500).json({error: true, message: "Ocurrió un problema"})
